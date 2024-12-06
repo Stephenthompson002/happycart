@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "579358759567",
+    "project_id": "study-app-5f65f",
+    "storage_bucket": "study-app-5f65f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579358759567:android:1ab3baf01119e7e5206efa",
+        "android_client_info": {
+          "package_name": "com.happycart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYJpolERQ6z9fhndZJ9eEUyo-PckPHOGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579358759567:android:13de8b8c132f13e6206efa",
+        "android_client_info": {
+          "package_name": "com.step.study"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYJpolERQ6z9fhndZJ9eEUyo-PckPHOGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

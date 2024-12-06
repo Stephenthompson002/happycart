@@ -1,0 +1,53 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android' // Ensure Kotlin support
+
+android {
+    namespace 'com.happycart'
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.happycart"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Set the Java version
+        targetCompatibility = JavaVersion.VERSION_17  // Set the Java target version
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"  // Set the Kotlin target JVM version
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'  // Required for large apps
+    implementation 'com.google.firebase:firebase-analytics:20.1.0' // For Firebase, if applicable
+    // Add Appwrite dependencies if needed, ensure correct versions
+}
+
+apply plugin: 'com.google.gms.google-services'  // For Firebase (if you're using it)
+
+
+
+
+
+
+flutter {
+    source = "../.."
+}
